@@ -19,6 +19,10 @@ Running log for this site (published at lmccorvey85.github.io/recipes/) and its 
 
 - **Stir fry oversalting fix** — baked into `dinner/velveted_chicken_stir_fry.html`: switched to low-sodium soy sauce, reduced oyster sauce.
 
+## Reference docs mirrored
+
+- **2026-09-07 — `rules.md` and `ai-handoff.md` added.** Mirrored the recipe-development Claude.ai Project's actual rulebook and handoff doc into this repo (previously only a summary existed, held in a separate session's memory — now the authoritative source is versioned here too).
+
 ## New recipes
 
 - **2026-08-28 — Cajun Shrimp & Sausage Skillet with Buttered Garlic Green Beans.** Added `dinner/cajun_shrimp_sausage_skillet.html`, linked from `index.html`. Developed in the recipe Project, then scaled from the original 4-serving version to a 6-serving meal-prep batch with the sauce doubled again (on top of the recipe's usual "double sauce" rule) after the first cook ran too thin to coat the rice.
