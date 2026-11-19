@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smoothies (5 versions)</title>
+<style>
+:root { --ink:#222; --muted:#666; --line:#e4e4e4; --accent:#b4441f; --link:#0b5cad; --soft:#faf7f4; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", Arial, sans-serif; margin: 0 auto; max-width: 900px;
+       padding: 28px 18px 60px; line-height: 1.6; color: var(--ink); }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { margin: 0 0 6px; line-height: 1.25; }
+h2 { border-bottom: 2px solid var(--line); padding-bottom: 6px; margin-top: 40px; }
+h3 { margin-top: 28px; }
+.subtitle, .crumbs, footer { color: var(--muted); }
+.crumbs { font-size: .95em; margin: 0 0 14px; }
+nav.toc { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 14px; }
+.card { display: block; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px;
+        color: var(--ink); background: var(--soft); transition: box-shadow .15s, transform .15s; }
+.card:hover { box-shadow: 0 2px 10px rgba(0,0,0,.09); transform: translateY(-1px); text-decoration: none; }
+.card-title { font-weight: 600; color: var(--link); display: block; margin-bottom: 4px; }
+.card-desc { font-size: .93em; color: #444; display: block; }
+.tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { display: inline-block; background: #eee; border-radius: 4px; padding: 1px 8px; font-size: .8em; color: #444; }
+.tag.warn { background: #fde8d8; color: #8a3410; }
+.tag.cat { background: #e3eefb; color: #174a85; }
+.empty { color: var(--muted); font-style: italic; }
+dl.fields { display: grid; grid-template-columns: minmax(150px, 210px) 1fr; gap: 8px 18px; margin: 18px 0; }
+dl.fields dt { font-weight: 600; color: #444; }
+dl.fields dd { margin: 0; }
+dl.fields dd ul { margin: 4px 0 0; padding-left: 20px; }
+@media (max-width: 600px) { dl.fields { grid-template-columns: 1fr; gap: 2px; } dl.fields dd { margin-bottom: 10px; } }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .93em; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+th { background: #f4f4f4; }
+.tablewrap { overflow-x: auto; }
+ol li, ul li { margin-bottom: 4px; }
+footer { margin-top: 50px; font-size: .85em; border-top: 1px solid var(--line); padding-top: 12px; }
+</style>
+</head>
+<body>
+<p class="crumbs"><a href="../index.html">&larr; All recipes</a> &nbsp;|&nbsp; <a href="../index.html#smoothies">Smoothies</a></p>
+<h1>Smoothies (5 versions)</h1>
+<div class="tags"><span class="tag cat">Smoothies</span><span class="tag">site import</span></div>
+<dl class="fields"><dt>Category</dt><dd>Smoothies (1 serving each)</dd><dt>Main dish</dt><dd>Blender smoothies; some can be pre-loaded in a blender cup the night before and blended in the morning.</dd><dt>Key ingredients</dt><dd>Greek yogurt or yogurt, milk, banana, frozen berries, frozen peaches, honey, chia, peanut butter.</dd><dt>Sauce &amp; seasoning</dt><dd>Blend on high 30–60 sec until smooth; serve immediately.</dd><dt>Shortcut options</dt><dd>Frozen fruit (no ice needed).</dd><dt>User feedback</dt><dd>None recorded.</dd><dt>Future changes</dt><dd>Strawberry Peach rebuilt 261118 (the site page was empty) — not yet made; adjust honey and thickness after the first try. Berry Smoothie's site page was cut off before its blend step; the table uses the same night-before/blend-in-the-morning method as Banana PB.</dd><dt>Save date</dt><dd>2026-11-17 (imported from recipe site); Strawberry Peach added 2026-11-18</dd></dl>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Smoothie</th>
+<th>Ingredients</th>
+<th>Approx. nutrition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Berry Banana</td>
+<td>½ cup blueberries, 1 banana, ½ cup yogurt, ½ cup milk, 1 tsp honey</td>
+<td>250 kcal, 8 g protein, 48 g carbs, 4 g fat</td>
+</tr>
+<tr>
+<td>Berry (prep-ahead)</td>
+<td>1 plain Greek yogurt cup (5.3 oz), ½ cup frozen strawberries, ¼ cup frozen blueberries, ½ cup 2% milk, 1 Tbsp chia, ½ tsp honey — combine in blender cup the night before, blend in the morning</td>
+<td>not listed</td>
+</tr>
+<tr>
+<td>Apple-Banana</td>
+<td>1 apple diced, 1 banana, 1 Greek yogurt cup (5.3 oz), ½ cup milk, ½ Tbsp honey</td>
+<td>~220 kcal, 8 g protein, 40 g carbs, 3 g fat</td>
+</tr>
+<tr>
+<td>Banana Peanut Butter (prep-ahead)</td>
+<td>1 plain Greek yogurt cup (5.3 oz), 1 banana in 1" chunks, 1 Tbsp peanut butter, ¾ cup 2% milk, 1 Tbsp chia, ½ tsp honey — combine the night before, blend in the morning</td>
+<td>~380 kcal, 16 g protein, 45 g carbs, 14 g fat</td>
+</tr>
+<tr>
+<td>Strawberry Peach (rebuilt 261118)</td>
+<td>See full recipe below</td>
+<td>~240 kcal, 20 g protein, 34 g carbs, 3 g fat, 3 g fiber (without chia)</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Strawberry Peach Smoothie — full recipe (1 serving, ~16 oz)</h3>
+<p>Prep 3 min, blend 1 min. Mild, sweet-tart, thick enough for a straw without ice.</p>
+<p><strong>Ingredients:</strong></p>
+<ul>
+<li>½ cup Kroger frozen sliced peaches (or 1 ripe fresh peach, sliced — then add 3–4 ice cubes)</li>
+<li>½ cup Kroger frozen strawberries</li>
+<li>1 Kroger plain Greek yogurt cup (5.3 oz)</li>
+<li>½ cup 2% milk (up to ¾ cup for thinner)</li>
+<li>1 tsp honey</li>
+<li>¼ tsp vanilla extract</li>
+<li>Optional: 1 Tbsp chia seeds (+60 kcal, +4 g fiber; thickens it)</li>
+<li>Optional: ½ banana for a creamier, sweeter version (+50 kcal)</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Add milk first, then yogurt, honey, and vanilla. Liquid on the bottom keeps the blades from stalling on frozen fruit.</li>
+<li>Add frozen peaches and strawberries on top (and chia/banana if using).</li>
+<li>Blend on low 10 seconds to break up the fruit, then on high 30–60 seconds until fully smooth with no icy chunks.</li>
+<li>Too thick: add milk 2 Tbsp at a time. Too thin: add a few more frozen peach slices. Taste; add ½ tsp more honey only if the fruit is tart.</li>
+<li>Serve right away.</li>
+</ol>
+<p><strong>Prep-ahead option:</strong> the night before, put the yogurt, honey, vanilla, and chia in the blender cup and refrigerate; keep the fruit in the freezer. In the morning add milk and the frozen fruit, then blend. Adding frozen fruit the night before makes it thaw and go watery.</p>
+<p><strong>Storage:</strong> best fresh. Leftovers keep up to 24 hours in a sealed jar in the fridge; shake or re-blend (it will thin out and separate a little).</p>
+<p><strong>Kroger shopping:</strong> Kroger frozen sliced peaches (16 oz), Kroger frozen strawberries (16 oz), Kroger plain Greek yogurt cups — each bag of fruit makes ~4 smoothies.</p>
+<footer>Read-only view generated 2026-11-18 from the Recipe Collection Claude Project. Changes are made in the Project, then the site is regenerated. &middot; <a href="../index.html">All recipes</a></footer>
+</body>
+</html>

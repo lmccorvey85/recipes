@@ -1,77 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Homemade Drinks Reference</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        h1, h2 { color: #333; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul, ol { margin-left: 20px; }
-        .tag { display: inline-block; background: #f4f4f4; border-radius: 4px; padding: 2px 8px; font-size: 0.85em; margin-right: 6px; }
-        hr { border: none; border-top: 1px solid #ddd; margin: 24px 0; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easy Homemade Drinks — Sun Tea, Cold Brew Tea, Kool-Aid, Simple Syrup</title>
+<style>
+:root { --ink:#222; --muted:#666; --line:#e4e4e4; --accent:#b4441f; --link:#0b5cad; --soft:#faf7f4; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", Arial, sans-serif; margin: 0 auto; max-width: 900px;
+       padding: 28px 18px 60px; line-height: 1.6; color: var(--ink); }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { margin: 0 0 6px; line-height: 1.25; }
+h2 { border-bottom: 2px solid var(--line); padding-bottom: 6px; margin-top: 40px; }
+h3 { margin-top: 28px; }
+.subtitle, .crumbs, footer { color: var(--muted); }
+.crumbs { font-size: .95em; margin: 0 0 14px; }
+nav.toc { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 14px; }
+.card { display: block; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px;
+        color: var(--ink); background: var(--soft); transition: box-shadow .15s, transform .15s; }
+.card:hover { box-shadow: 0 2px 10px rgba(0,0,0,.09); transform: translateY(-1px); text-decoration: none; }
+.card-title { font-weight: 600; color: var(--link); display: block; margin-bottom: 4px; }
+.card-desc { font-size: .93em; color: #444; display: block; }
+.tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { display: inline-block; background: #eee; border-radius: 4px; padding: 1px 8px; font-size: .8em; color: #444; }
+.tag.warn { background: #fde8d8; color: #8a3410; }
+.tag.cat { background: #e3eefb; color: #174a85; }
+.empty { color: var(--muted); font-style: italic; }
+dl.fields { display: grid; grid-template-columns: minmax(150px, 210px) 1fr; gap: 8px 18px; margin: 18px 0; }
+dl.fields dt { font-weight: 600; color: #444; }
+dl.fields dd { margin: 0; }
+dl.fields dd ul { margin: 4px 0 0; padding-left: 20px; }
+@media (max-width: 600px) { dl.fields { grid-template-columns: 1fr; gap: 2px; } dl.fields dd { margin-bottom: 10px; } }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .93em; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+th { background: #f4f4f4; }
+.tablewrap { overflow-x: auto; }
+ol li, ul li { margin-bottom: 4px; }
+footer { margin-top: 50px; font-size: .85em; border-top: 1px solid var(--line); padding-top: 12px; }
+</style>
 </head>
 <body>
-    <h1>Easy Homemade Drinks Reference</h1>
-    <p><a href="../index.html">&larr; All Recipes</a> &nbsp;|&nbsp; <a href="../index.html#drinks">Drinks</a></p>
-    <p>Simple, cheap, low-sugar-waste versions of sun tea, cold brew tea, and Kool-Aid.</p>
-
-    <h2 id="sun-tea">Sun Tea</h2>
-    <p><strong>Ratio (1-gallon pitcher, syrup included):</strong> 15 cups cold water + 4&ndash;6 family-size tea bags (or 8&ndash;10 regular bags)</p>
-    <ol>
-        <li>Fill your pitcher/jar with 15 cups cold water (holding back 1 cup for syrup), drop in tea bags.</li>
-        <li>Let sit at room temp or in sunlight 3&ndash;5 hours. Don't go past ~8 hours &mdash; can turn bitter/funky.</li>
-        <li>Remove bags. Stir in 1 cup simple syrup (see below). Total lands right around 1 gallon.</li>
-    </ol>
-
-    <hr>
-    <h2 id="cold-brew-tea">Cold Brew Tea</h2>
-    <p><strong>Ratio (1-gallon pitcher, syrup included):</strong> 15 cups cold water + 4&ndash;6 family-size tea bags (or 8&ndash;10 regular bags)</p>
-    <ol>
-        <li>Fill your pitcher with 15 cups cold water (holding back 1 cup for syrup), drop in bags, cover.</li>
-        <li>Refrigerate 6&ndash;12 hours (overnight is easiest). More forgiving than sun tea &mdash; won't go bitter if it sits a bit longer.</li>
-        <li>Remove bags. Stir in 1 cup simple syrup (see below). Total lands right around 1 gallon.</li>
-    </ol>
-
-    <hr>
-    <h2 id="kool-aid">Kool-Aid (Really Sweet, Less Sugar Used)</h2>
-    <p><strong>Base:</strong> 1 packet Kool-Aid per 2 quarts water (check your packet &mdash; some make more)</p>
-    <p><strong>Ratio (1-gallon pitcher, syrup included):</strong> 13 cups cold water + Kool-Aid packet(s)</p>
-    <ol>
-        <li>Mix Kool-Aid packet(s) into 13 cups cold water (holding back room for a bigger syrup batch &mdash; Kool-Aid needs more sugar than tea to taste "really sweet").</li>
-        <li>Stir in your Kool-Aid syrup (2 cups sugar + 2 cups hot water, cooled &mdash; see below). This brings you close to a gallon.</li>
-        <li>Taste and adjust: top off with a splash more cold water if too strong, or add more syrup in small splashes if you want it sweeter.</li>
-    </ol>
-    <p><strong>Pick one approach if you want to cut sugar further:</strong></p>
-    <ul>
-        <li><strong>Sweetened packets</strong> ("no sugar needed" kind) &mdash; just add water, no scooping sugar.</li>
-        <li><strong>Less water than called for</strong> &mdash; stronger/sweeter per cup without more sugar; stretch with extra ice when serving.</li>
-        <li><strong>Half sugar, half Splenda/stevia</strong> &mdash; cuts real sugar usage roughly in half, still tastes fully sweet (not "diet" flavor). Best long-term sugar-saving option.</li>
-        <li><strong>Simple syrup instead of raw sugar</strong> &mdash; dissolves fully and evenly, so you're not over-scooping to compensate for gritty undissolved sugar.</li>
-    </ul>
-
-    <hr>
-    <h2 id="simple-syrup">Simple Syrup (for cold drinks)</h2>
-    <p>Use for cold brew tea or Kool-Aid when you want sugar to dissolve evenly and use less overall. Always equal parts sugar + hot water &mdash; amount just changes by drink.</p>
-    <ul>
-        <li><strong>For 1 gallon sweet tea</strong> (sun tea or cold brew): 1 cup sugar + 1 cup hot water</li>
-        <li><strong>For 1 gallon "really sweet" Kool-Aid:</strong> 2 cups sugar + 2 cups hot water (adjust to taste)</li>
-    </ul>
-    <ol>
-        <li>Stir sugar and hot water together until fully clear/dissolved.</li>
-        <li>Cool, then stir into your cold pitcher.</li>
-        <li>Store extra in the fridge (keeps a few weeks) &mdash; makes sweetening future batches faster, and lets you top off sweetness without a whole new pot.</li>
-    </ol>
-
-    <hr>
-    <h2>General Sugar-Saving Tips</h2>
-    <ul>
-        <li>Brew tea stronger (more bags) so you need less sugar to make it taste "full" &mdash; weak tea gets oversweetened just to give it flavor.</li>
-        <li>Always dissolve sugar before adding to cold drinks (syrup or warm-tea method) &mdash; undissolved sugar sinks and tempts you to add more.</li>
-        <li>Half sugar / half sweetener works well across all three drinks if you want to cut sugar spend without losing sweetness.</li>
-    </ul>
+<p class="crumbs"><a href="../index.html">&larr; All recipes</a> &nbsp;|&nbsp; <a href="../index.html#drinks">Drinks</a></p>
+<h1>Easy Homemade Drinks — Sun Tea, Cold Brew Tea, Kool-Aid, Simple Syrup</h1>
+<div class="tags"><span class="tag cat">Drinks</span><span class="tag">site import</span></div>
+<dl class="fields"><dt>Category</dt><dd>Drinks (1-gallon pitchers)</dd><dt>Main dish</dt><dd>Cheap, low-sugar-waste sweet tea and Kool-Aid using simple syrup.</dd><dt>Key ingredients</dt><dd>Family-size or regular tea bags, Kool-Aid packets, sugar, water.</dd><dt>Sauce &amp; seasoning</dt><dd>Simple syrup = equal parts sugar + hot water, stirred until clear, cooled. Sweet tea: 1 cup sugar + 1 cup hot water per gallon. "Really sweet" Kool-Aid: 2 cups sugar + 2 cups hot water per gallon (adjust). Extra syrup keeps a few weeks in the fridge.</dd><dt>Shortcut options</dt><dd>"No sugar needed" Kool-Aid packets; half sugar / half Splenda or stevia.</dd><dt>User feedback</dt><dd>None recorded.</dd><dt>Future changes</dt><dd>None noted.</dd><dt>Save date</dt><dd>2026-11-17 (imported from recipe site)</dd></dl>
+<p><strong>Sun Tea:</strong> 15 cups cold water + 4–6 family-size bags (or 8–10 regular). Sit at room temp or in sun 3–5 hrs (not past ~8 hrs — turns bitter). Remove bags, stir in 1 cup simple syrup → ~1 gallon.</p>
+<p><strong>Cold Brew Tea:</strong> same ratio, covered, refrigerate 6–12 hrs (overnight). More forgiving — won't go bitter. Remove bags, stir in 1 cup simple syrup.</p>
+<p><strong>Kool-Aid (really sweet, less sugar):</strong> 1 packet per 2 quarts (check packet). 13 cups cold water + packet(s) + 2-cup-sugar syrup batch → close to 1 gallon. Taste; splash more water if strong, more syrup if you want sweeter.</p>
+<p><strong>Sugar-saving tips:</strong> brew tea stronger so it needs less sugar; always dissolve sugar before adding to cold drinks; use less water and stretch with ice; half sugar / half sweetener works for all three.</p>
+<footer>Read-only view generated 2026-11-18 from the Recipe Collection Claude Project. Changes are made in the Project, then the site is regenerated. &middot; <a href="../index.html">All recipes</a></footer>
 </body>
 </html>

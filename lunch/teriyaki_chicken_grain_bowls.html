@@ -1,92 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big-Batch Velveted Teriyaki Chicken Grain Bowls</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        h1, h2 { color: #333; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul, ol { margin-left: 20px; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f4f4f4; }
-        .tag { display: inline-block; background: #f4f4f4; border-radius: 4px; padding: 2px 8px; font-size: 0.85em; margin-right: 6px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big-Batch Velveted Teriyaki Chicken Grain Bowls</title>
+<style>
+:root { --ink:#222; --muted:#666; --line:#e4e4e4; --accent:#b4441f; --link:#0b5cad; --soft:#faf7f4; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", Arial, sans-serif; margin: 0 auto; max-width: 900px;
+       padding: 28px 18px 60px; line-height: 1.6; color: var(--ink); }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { margin: 0 0 6px; line-height: 1.25; }
+h2 { border-bottom: 2px solid var(--line); padding-bottom: 6px; margin-top: 40px; }
+h3 { margin-top: 28px; }
+.subtitle, .crumbs, footer { color: var(--muted); }
+.crumbs { font-size: .95em; margin: 0 0 14px; }
+nav.toc { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 14px; }
+.card { display: block; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px;
+        color: var(--ink); background: var(--soft); transition: box-shadow .15s, transform .15s; }
+.card:hover { box-shadow: 0 2px 10px rgba(0,0,0,.09); transform: translateY(-1px); text-decoration: none; }
+.card-title { font-weight: 600; color: var(--link); display: block; margin-bottom: 4px; }
+.card-desc { font-size: .93em; color: #444; display: block; }
+.tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { display: inline-block; background: #eee; border-radius: 4px; padding: 1px 8px; font-size: .8em; color: #444; }
+.tag.warn { background: #fde8d8; color: #8a3410; }
+.tag.cat { background: #e3eefb; color: #174a85; }
+.empty { color: var(--muted); font-style: italic; }
+dl.fields { display: grid; grid-template-columns: minmax(150px, 210px) 1fr; gap: 8px 18px; margin: 18px 0; }
+dl.fields dt { font-weight: 600; color: #444; }
+dl.fields dd { margin: 0; }
+dl.fields dd ul { margin: 4px 0 0; padding-left: 20px; }
+@media (max-width: 600px) { dl.fields { grid-template-columns: 1fr; gap: 2px; } dl.fields dd { margin-bottom: 10px; } }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .93em; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+th { background: #f4f4f4; }
+.tablewrap { overflow-x: auto; }
+ol li, ul li { margin-bottom: 4px; }
+footer { margin-top: 50px; font-size: .85em; border-top: 1px solid var(--line); padding-top: 12px; }
+</style>
 </head>
 <body>
-    <h1>Big-Batch Velveted Teriyaki Chicken Grain Bowls</h1>
-    <p><a href="../index.html">&larr; All Recipes</a> &nbsp;|&nbsp; <a href="../index.html#lunch">Lunch</a></p>
-    <p><span class="tag">Meal Prep</span><span class="tag">Serves 5</span></p>
-
-    <h2>Overview</h2>
-    <p>Velveted chicken thighs, frozen stir-fry vegetables, Success Rice, and a double-batch teriyaki sauce, portioned into 5 grab-and-go bowls.</p>
-
-    <h2>Ingredients &mdash; Chicken &amp; Velveting Marinade</h2>
-    <ul>
-        <li>1.5 lb boneless skinless chicken thighs, cut into 1-inch pieces</li>
-        <li>1 tbsp soy sauce (or low-sodium)</li>
-        <li>1 tbsp cornstarch</li>
-        <li>1 tsp oil</li>
-        <li>1/2 tsp garlic powder</li>
-        <li>1/2 tsp onion powder</li>
-        <li>1/4 tsp black pepper</li>
-        <li>1/8 tsp baking soda</li>
-    </ul>
-
-    <h2>Ingredients &mdash; Vegetables &amp; Rice</h2>
-    <ul>
-        <li>1 bag (12&ndash;16 oz) frozen stir-fry vegetable blend</li>
-        <li>2 regular Success Rice bags (yields ~5 cups cooked; check box yield, size up to family-size if needed)</li>
-    </ul>
-
-    <h2>Ingredients &mdash; Teriyaki Sauce (double batch)</h2>
-    <ul>
-        <li>3/4 cup bottled teriyaki sauce</li>
-        <li>2 tbsp soy sauce</li>
-        <li>1 tbsp brown sugar</li>
-        <li>1 tsp sesame oil</li>
-        <li>1 tbsp cornstarch + 2 tbsp water, whisked separately (slurry)</li>
-        <li>1/2 tsp ground ginger (optional)</li>
-        <li>1/2 tsp garlic powder (or 1 clove minced garlic)</li>
-        <li>1 tbsp oil, for searing</li>
-    </ul>
-
-    <h2>Prep</h2>
-    <ol>
-        <li>Cut chicken into bite-size (roughly 1-inch) pieces.</li>
-        <li>Combine chicken with velveting marinade ingredients; toss until evenly coated.</li>
-        <li>Marinate 15&ndash;20 min at room temp, or refrigerate a few hours ahead.</li>
-        <li>Whisk the cornstarch-water slurry separately &mdash; keep it out of the sauce until the final step.</li>
-        <li>Mix teriyaki sauce, soy sauce, brown sugar, sesame oil, ginger, and garlic powder in a bowl (slurry stays separate).</li>
-    </ol>
-
-    <h2>Cooking</h2>
-    <ol start="6">
-        <li>Cook Success Rice per package directions; set aside, keep warm.</li>
-        <li>Heat 1 tbsp oil in a large skillet or wok over medium-high until shimmering.</li>
-        <li>Sear chicken in batches &mdash; don't overcrowd, or it steams instead of sears. 2&ndash;3 min per batch until edges turn opaque and lightly golden. Remove each batch.</li>
-        <li>In the same pan, add frozen stir-fry vegetables. Cook 4&ndash;5 min over medium-high, stirring occasionally, until tender-crisp.</li>
-        <li>Return all chicken to the pan. Pour in the teriyaki sauce mixture, stir to coat.</li>
-        <li>Re-whisk the cornstarch slurry (it settles), pour it in. Simmer 2&ndash;3 min, stirring, until the sauce thickens and the chicken reaches 165&deg;F internal.</li>
-        <li>Remove from heat, cool 5&ndash;10 min before portioning so containers don't steam/sweat in the fridge.</li>
-    </ol>
-
-    <h2>Portioning</h2>
-    <p>Divide rice evenly among 5 containers, top with chicken, veggies, and sauce. Seal and refrigerate.</p>
-
-    <h2>Containers</h2>
-    <p>5&ndash;6 32 oz (4-cup) rectangular meal-prep containers, microwave-safe with vented lids preferred. Glass (Pyrex/Rubbermaid Brilliance) is a good long-term upgrade.</p>
-
-    <h2>Storage &amp; Reheating</h2>
-    <p>Fridge: good for 4&ndash;5 days in airtight containers. Reheat microwave-covered, 1.5&ndash;2 min, stirring halfway. Add a splash of water if the rice looks dry.</p>
-
-    <h2>Shortcut Options</h2>
-    <p>Rotisserie chicken instead of raw thighs &mdash; skip velveting/searing, shred and toss in sauce. Faster, but less juicy. Bottled teriyaki sauce doctored with soy sauce, brown sugar, sesame oil, and ginger.</p>
-
-    <h2>Estimated Cost</h2>
-    <p>~$14&ndash;18 total for 5 servings (~$3/serving).</p>
+<p class="crumbs"><a href="../index.html">&larr; All recipes</a> &nbsp;|&nbsp; <a href="../index.html#lunch">Lunch</a></p>
+<h1>Big-Batch Velveted Teriyaki Chicken Grain Bowls</h1>
+<div class="tags"><span class="tag cat">Lunch</span><span class="tag">site import</span></div>
+<dl class="fields"><dt>Category</dt><dd>Lunch (meal prep, serves 5)</dd><dt>Main dish</dt><dd>Velveted chicken thighs and frozen stir-fry veg in doctored teriyaki over Success Rice, portioned into 5 bowls.</dd><dt>Side dishes</dt><dd>Built into the bowl.</dd><dt>Vegetable side</dt><dd>Frozen stir-fry vegetable blend (in the bowl).</dd><dt>Key ingredients</dt><dd>1.5 lb boneless skinless chicken thighs (1" pieces); velveting: 1 Tbsp soy (or low-sodium), 1 Tbsp cornstarch, 1 tsp oil, ½ tsp garlic powder, ½ tsp onion powder, ¼ tsp pepper, ⅛ tsp baking soda; 1 bag (12–16 oz) frozen stir-fry veg; 1 Tbsp oil for searing.</dd><dt>Sauce &amp; seasoning</dt><dd><strong>Double batch teriyaki</strong> — ¾ cup bottled teriyaki, 2 Tbsp soy, 1 Tbsp brown sugar, 1 tsp sesame oil, ½ tsp ground ginger (optional), ½ tsp garlic powder (or 1 clove); slurry kept separate: 1 Tbsp cornstarch + 2 Tbsp water.</dd><dt>Success Rice</dt><dd><ul>
+<li>Cooked rice needed: ~5 cups</li>
+<li>Regular Success Rice bags: 2 (size up to family-size if needed)</li>
+<li>Family-size Success Rice bags: 1–2</li>
+<li>Rice prep note: fresh, plain. Check box yield, sizes vary.</li>
+</ul></dd><dt>Shortcut options</dt><dd>Rotisserie chicken (skip velveting, shred into sauce — faster but less juicy); bottled teriyaki doctored as above.</dd><dt>User feedback</dt><dd>None recorded.</dd><dt>Future changes</dt><dd>None noted.</dd><dt>Save date</dt><dd>2026-11-17 (imported from recipe site)</dd></dl>
+<h2>Full Recipe</h2>
+<ol>
+<li>Toss chicken with velveting ingredients; marinate 15–20 min (or refrigerate a few hours).</li>
+<li>Mix sauce (slurry separate). Cook rice; keep warm.</li>
+<li>1 Tbsp oil, skillet/wok, medium-high until shimmering. Sear chicken in batches 2–3 min until opaque and lightly golden. Remove.</li>
+<li>Same pan: frozen veg 4–5 min until tender-crisp.</li>
+<li>Return chicken, add sauce. Re-whisk slurry, add; simmer 2–3 min until thick and chicken hits 165°F.</li>
+<li>Cool 5–10 min, then divide rice, chicken, veg, sauce into 5 containers.</li>
+</ol>
+<p><strong>Containers:</strong> 5–6 × 32 oz microwave-safe with vented lids (glass is a good upgrade).</p>
+<p><strong>Storage:</strong> fridge 4–5 days.</p>
+<p><strong>Reheating:</strong> microwave covered 1.5–2 min, stir halfway; splash of water if rice is dry.</p>
+<p><strong>Cost:</strong> ~$14–18 total, ~$3/serving.</p>
+<footer>Read-only view generated 2026-11-18 from the Recipe Collection Claude Project. Changes are made in the Project, then the site is regenerated. &middot; <a href="../index.html">All recipes</a></footer>
 </body>
 </html>

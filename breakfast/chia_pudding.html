@@ -1,70 +1,53 @@
-<script type="text/javascript">
-        var gk_isXlsx = false;
-        var gk_xlsxFileLookup = {};
-        var gk_fileData = {};
-        function filledCell(cell) {
-          return cell !== '' && cell != null;
-        }
-        function loadFileData(filename) {
-        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
-            try {
-                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
-                var firstSheetName = workbook.SheetNames[0];
-                var worksheet = workbook.Sheets[firstSheetName];
-
-                // Convert sheet to JSON to filter blank rows
-                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
-                // Filter out blank rows (rows where all cells are empty, null, or undefined)
-                var filteredData = jsonData.filter(row => row.some(filledCell));
-
-                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
-                var headerRowIndex = filteredData.findIndex((row, index) =>
-                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
-                );
-                // Fallback
-                if (headerRowIndex === -1 || headerRowIndex > 25) {
-                  headerRowIndex = 0;
-                }
-
-                // Convert filtered JSON back to CSV
-                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
-                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
-                return csv;
-            } catch (e) {
-                console.error(e);
-                return "";
-            }
-        }
-        return gk_fileData[filename] || "";
-        }
-        </script><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chia Seed Pudding</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chia Seed Pudding</title>
+<style>
+:root { --ink:#222; --muted:#666; --line:#e4e4e4; --accent:#b4441f; --link:#0b5cad; --soft:#faf7f4; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", Arial, sans-serif; margin: 0 auto; max-width: 900px;
+       padding: 28px 18px 60px; line-height: 1.6; color: var(--ink); }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { margin: 0 0 6px; line-height: 1.25; }
+h2 { border-bottom: 2px solid var(--line); padding-bottom: 6px; margin-top: 40px; }
+h3 { margin-top: 28px; }
+.subtitle, .crumbs, footer { color: var(--muted); }
+.crumbs { font-size: .95em; margin: 0 0 14px; }
+nav.toc { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 14px; }
+.card { display: block; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px;
+        color: var(--ink); background: var(--soft); transition: box-shadow .15s, transform .15s; }
+.card:hover { box-shadow: 0 2px 10px rgba(0,0,0,.09); transform: translateY(-1px); text-decoration: none; }
+.card-title { font-weight: 600; color: var(--link); display: block; margin-bottom: 4px; }
+.card-desc { font-size: .93em; color: #444; display: block; }
+.tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { display: inline-block; background: #eee; border-radius: 4px; padding: 1px 8px; font-size: .8em; color: #444; }
+.tag.warn { background: #fde8d8; color: #8a3410; }
+.tag.cat { background: #e3eefb; color: #174a85; }
+.empty { color: var(--muted); font-style: italic; }
+dl.fields { display: grid; grid-template-columns: minmax(150px, 210px) 1fr; gap: 8px 18px; margin: 18px 0; }
+dl.fields dt { font-weight: 600; color: #444; }
+dl.fields dd { margin: 0; }
+dl.fields dd ul { margin: 4px 0 0; padding-left: 20px; }
+@media (max-width: 600px) { dl.fields { grid-template-columns: 1fr; gap: 2px; } dl.fields dd { margin-bottom: 10px; } }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .93em; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+th { background: #f4f4f4; }
+.tablewrap { overflow-x: auto; }
+ol li, ul li { margin-bottom: 4px; }
+footer { margin-top: 50px; font-size: .85em; border-top: 1px solid var(--line); padding-top: 12px; }
+</style>
 </head>
 <body>
-    <h1>Chia Seed Pudding</h1>
-    <p><a href="../index.html">&larr; All Recipes</a> &nbsp;|&nbsp; <a href="../index.html#breakfast">Breakfast</a> &nbsp;|&nbsp; <a href="../plans/meal_plan.html#meal-list">Sample Meal Plan</a></p>
-    <h2>Ingredients (1 serving)</h2>
-    <ul>
-        <li>1 tbsp chia seeds</li>
-        <li>1/2 cup Kroger 2% Milk</li>
-        <li>1/2 tsp honey</li>
-        <li>Pinch of salt</li>
-    </ul>
-    <h2>Instructions</h2>
-    <ol>
-        <li><strong>Evening Prep (3 min):</strong> In a small container, combine chia seeds, milk, honey, and a pinch of salt. Stir well.</li>
-        <li>Refrigerate overnight (at least 8 hours).</li>
-        <li><strong>Morning (1 min):</strong> Stir and serve cold. No cutting required.</li>
-    </ol>
-    <h2>Nutrition (Per Serving)</h2>
-    <p>Approx: 150 kcal, 6g protein, 12g carbs, 8g fat, 5g fiber</p>
-    <h2>Prep Time</h2>
-    <p>3 min (evening) + 1 min (morning)</p>
-    <h2>Cook Time</h2>
-    <p>0 min</p>
+<p class="crumbs"><a href="../index.html">&larr; All recipes</a> &nbsp;|&nbsp; <a href="../index.html#breakfast">Breakfast</a></p>
+<h1>Chia Seed Pudding</h1>
+<div class="tags"><span class="tag cat">Breakfast</span><span class="tag">site import</span></div>
+<dl class="fields"><dt>Category</dt><dd>Breakfast (1 serving; 3 min evening + 1 min morning)</dd><dt>Main dish</dt><dd>Simple overnight chia pudding.</dd><dt>Key ingredients</dt><dd>1 Tbsp chia seeds, ½ cup 2% milk, ½ tsp honey, pinch of salt.</dd><dt>Sauce &amp; seasoning</dt><dd>None.</dd><dt>User feedback</dt><dd>None recorded.</dd><dt>Future changes</dt><dd>None noted.</dd><dt>Save date</dt><dd>2026-11-17 (imported from recipe site)</dd></dl>
+<p><strong>Steps:</strong> Stir everything together in a small container, refrigerate overnight (8+ hrs). Stir and serve cold.</p>
+<p><strong>Nutrition:</strong> ~150 kcal, 6 g protein, 12 g carbs, 8 g fat, 5 g fiber.</p>
+<footer>Read-only view generated 2026-11-18 from the Recipe Collection Claude Project. Changes are made in the Project, then the site is regenerated. &middot; <a href="../index.html">All recipes</a></footer>
 </body>
 </html>
