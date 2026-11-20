@@ -285,7 +285,7 @@ def build(src, out):
         grid = f'<div class="grid">{"".join(cards)}</div>' if cards else '<p class="empty">None saved yet.</p>'
         blocks.append(f'<{heading} id="{sid}">{html.escape(name)}</{heading}>\n{grid}')
     home = f"""<h1>Our Recipes</h1>
-<p class="subtitle">{len(entries)} saved recipes &mdash; Southern/Cajun-leaning dinners, plus breakfast, lunch, smoothies, and drinks.</p>
+<p class="subtitle">{len(entries)} saved recipes &mdash; Southern/Cajun-leaning dinners, plus breakfast, lunch, smoothies, desserts, and drinks.</p>
 <nav class="toc">{"".join(toc)}</nav>
 {chr(10).join(blocks)}"""
     (out / "index.html").write_text(page("Our Recipes", home, 0))

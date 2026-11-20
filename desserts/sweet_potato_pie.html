@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Potato Pie</title>
+<style>
+:root { --ink:#222; --muted:#666; --line:#e4e4e4; --accent:#b4441f; --link:#0b5cad; --soft:#faf7f4; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", Arial, sans-serif; margin: 0 auto; max-width: 900px;
+       padding: 28px 18px 60px; line-height: 1.6; color: var(--ink); }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { margin: 0 0 6px; line-height: 1.25; }
+h2 { border-bottom: 2px solid var(--line); padding-bottom: 6px; margin-top: 40px; }
+h3 { margin-top: 28px; }
+.subtitle, .crumbs, footer { color: var(--muted); }
+.crumbs { font-size: .95em; margin: 0 0 14px; }
+nav.toc { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 14px; }
+.card { display: block; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px;
+        color: var(--ink); background: var(--soft); transition: box-shadow .15s, transform .15s; }
+.card:hover { box-shadow: 0 2px 10px rgba(0,0,0,.09); transform: translateY(-1px); text-decoration: none; }
+.card-title { font-weight: 600; color: var(--link); display: block; margin-bottom: 4px; }
+.card-desc { font-size: .93em; color: #444; display: block; }
+.tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { display: inline-block; background: #eee; border-radius: 4px; padding: 1px 8px; font-size: .8em; color: #444; }
+.tag.warn { background: #fde8d8; color: #8a3410; }
+.tag.cat { background: #e3eefb; color: #174a85; }
+.empty { color: var(--muted); font-style: italic; }
+dl.fields { display: grid; grid-template-columns: minmax(150px, 210px) 1fr; gap: 8px 18px; margin: 18px 0; }
+dl.fields dt { font-weight: 600; color: #444; }
+dl.fields dd { margin: 0; }
+dl.fields dd ul { margin: 4px 0 0; padding-left: 20px; }
+@media (max-width: 600px) { dl.fields { grid-template-columns: 1fr; gap: 2px; } dl.fields dd { margin-bottom: 10px; } }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .93em; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+th { background: #f4f4f4; }
+.tablewrap { overflow-x: auto; }
+ol li, ul li { margin-bottom: 4px; }
+footer { margin-top: 50px; font-size: .85em; border-top: 1px solid var(--line); padding-top: 12px; }
+</style>
+</head>
+<body>
+<p class="crumbs"><a href="../index.html">&larr; All recipes</a> &nbsp;|&nbsp; <a href="../index.html#desserts">Desserts</a></p>
+<h1>Sweet Potato Pie</h1>
+<div class="tags"><span class="tag cat">Desserts</span></div>
+<dl class="fields"><dt>Category</dt><dd>Desserts</dd><dt>Main dish</dt><dd>Southern sweet potato pie (one 9-inch pie, 8 slices)</dd><dt>Side dishes</dt><dd>N/A (dessert)</dd><dt>Vegetable side</dt><dd>N/A (dessert)</dd><dt>Key ingredients</dt><dd>mashed sweet potatoes, melted butter, granulated + light brown sugar, eggs, sweetened condensed milk, vanilla, cinnamon, nutmeg, optional ginger, Kroger Traditional Ready-To-Bake Pie Crust (2 ct)</dd><dt>Sauce &amp; seasoning</dt><dd>Spice = 2 tsp cinnamon, ¾ tsp nutmeg (cut from 1½ tsp, which overpowers), optional ¼ tsp ginger. Melted butter whisked in (not creamed) so the filling doesn't puff, crack and sink.</dd><dt>Shortcut options</dt><dd>1 can (29 oz) cut sweet potatoes/yams, drained very well and mashed smooth, in place of boiling fresh.</dd><dt>User feedback</dt><dd>User prefers sweetened condensed milk over the original evaporated milk. Uses a Google Sheet for bulk batches (see below).</dd><dt>Future changes</dt><dd>Very sweet with condensed milk + 1¼ cups sugar; consider cutting granulated sugar to ¼–⅓ cup per pie (offered, not applied). Record sweetness and set after first bake with condensed milk.</dd><dt>Save date</dt><dd>261120</dd></dl>
+<h2>Bulk measuring sheet</h2>
+<p>Google Sheet "Sweet Potato Pie": https://docs.google.com/spreadsheets/d/1P4ckoOKB-g-rhNpAG-jUjnJ0tV2dOPRnLEHb4X7kqug/edit</p>
+<ul>
+<li>F1 = number of pies (yellow cell); every total recalculates from it.</li>
+<li>Columns: Per Pie, Total Needed, Teaspoons, Tablespoons, Cups, Measure As (picks tsp / Tbsp / cups + remainder automatically), Shopping (lb of potatoes, butter sticks, egg dozens, 14 oz cans, 2 ct crust packs).</li>
+<li>At 12 pies: 24 cups mashed potato (~18 lb raw), 8 cups butter (16 sticks), 9 cups sugar, 6 cups brown sugar, 24 eggs, 9 cups condensed milk (8 cans), ¼ cup + 2 Tbsp vanilla, ½ cup cinnamon, 3 Tbsp nutmeg, 2 Tbsp salt, 12 crusts (6 packs).</li>
+</ul>
+<h2>Full recipe</h2>
+<p>Serves 8 · Prep 30 min · Bake 50–60 min · Cool 2 hrs + chill · ~$11–13 at Kroger</p>
+<h3>Ingredients (per pie)</h3>
+<ul>
+<li>2 medium sweet potatoes (about 1½ lb), peeled, cut in 1" cubes, for 2 cups mashed</li>
+<li>⅔ cup butter, melted and cooled 5 min</li>
+<li>¾ cup granulated sugar</li>
+<li>½ cup light brown sugar, packed</li>
+<li>2 large eggs, room temp</li>
+<li>¾ cup sweetened condensed milk</li>
+<li>1½ tsp vanilla extract</li>
+<li>2 tsp ground cinnamon</li>
+<li>¾ tsp ground nutmeg</li>
+<li>¼ tsp ground ginger (optional)</li>
+<li>½ tsp salt (¼ tsp if using salted butter)</li>
+<li>1 Kroger Traditional Ready-To-Bake Pie Crust, 9-inch (2 ct / 14 oz frozen; second crust for extra filling)</li>
+</ul>
+<p><strong>Equipment:</strong> medium saucepan, electric mixer, large bowl, whisk, sheet pan, foil, wire rack, instant-read thermometer.</p>
+<h3>Directions</h3>
+<ol>
+<li><strong>Potatoes:</strong> Cover cubes with cold water by 1". Boil, then simmer uncovered on medium 13–15 min until a fork slides in easily. Drain, return to the pot on low 1–2 min, shaking, to dry. Beat with a mixer until very smooth; pull stringy fibers off the beaters. Measure 2 cups; cool 20–30 min.</li>
+<li><strong>Oven:</strong> Heat to 425°F, rack lower-middle. Thaw crust 10–15 min; set it on a sheet pan.</li>
+<li><strong>Filling:</strong> Whisk melted butter with both sugars until smooth. Whisk in eggs, then condensed milk, vanilla, spices and salt. Add sweet potatoes; beat on low about 1 min, just until smooth.</li>
+<li><strong>Fill:</strong> Pour to ¼" below the rim. Extra filling goes into the second crust or greased ramekins (ramekins 25–30 min at 350°F).</li>
+<li><strong>Bake:</strong> 15 min at 425°F, then 350°F for 35–45 min. Tent edges with foil if they brown early. Done when edges are set, the center 2" jiggles like Jell-O, and the center reads 175°F.</li>
+<li><strong>Cool:</strong> On a rack 2 hrs, then refrigerate. Fully set after ~4 hrs.</li>
+</ol>
+<p><strong>Bulk baking:</strong> Mix 2–3 pies' worth at a time. Max 2 pies per rack on sheet pans; swap racks halfway through the 350°F stage.</p>
+<p><strong>Storage:</strong> Covered in the fridge up to 4 days. Freeze cooled whole pie, wrapped, up to 1 month; thaw overnight in the fridge.</p>
+<p><strong>Serving:</strong> Cold or room temp; warm a slice 10–15 sec in the microwave.</p>
+<footer>Read-only view generated 2026-11-20 from the Recipe Collection Claude Project. Changes are made in the Project, then the site is regenerated. &middot; <a href="../index.html">All recipes</a></footer>
+</body>
+</html>

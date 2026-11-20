@@ -26,6 +26,8 @@ Running log for this site (published at lmccorvey85.github.io/recipes/) and its 
 
 ## New recipes
 
+- **2026-11-20 — Sweet Potato Pie (first dessert).** Added `desserts/sweet_potato_pie.html` and a Desserts card on `index.html`, generated from the Project's `Recipe_Sweet_Potato_Pie`. Home-page subtitle in `tools/build_site.py` now mentions desserts. Other pages were not regenerated (unchanged since 2026-11-18).
+
 - **2026-08-28 — Cajun Shrimp & Sausage Skillet with Buttered Garlic Green Beans.** Added `dinner/cajun_shrimp_sausage_skillet.html`, linked from `index.html`. Developed in the recipe Project, then scaled from the original 4-serving version to a 6-serving meal-prep batch with the sauce doubled again (on top of the recipe's usual "double sauce" rule) after the first cook ran too thin to coat the rice.
 - **2026-09-07 — Golden Pineapple Butter-Glazed Sausage Fried Rice.** Added `dinner/pineapple_sausage_fried_rice.html`, linked from `index.html`. Converted from the existing `dinner/pineapple_chicken_fried_rice.html` to use seared Italian sausage + andouille instead of chicken, with a butter glaze. Pasted in from the recipe Project's Saved Recipe Entry format (full `rules.md` 28-part detail added here). **Not yet cooked** — salt level and sausage ratio still need to be validated and this page updated after the first cook.
 
